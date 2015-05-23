@@ -1,0 +1,28 @@
+/* *
+* Animations Stylesheet
+*
+* @author Rafael Antonio Lucio <rafaelantoniolucio@gmail.com>
+* */
+
+/* _____ ANIMATIONS _____ */
+
+@include keyframes(balanceArrow) {
+	0% {
+		transform: rotate(45deg);
+	}
+	20% {
+		transform: rotate(70deg);
+	}
+	40% {
+		transform: rotate(20deg);
+	}
+	60% {
+		transform: rotate(70deg);
+	}
+	80% {
+		transform: rotate(20deg);
+	}
+	100% {
+		transform: rotate(45deg);
+	}
+}

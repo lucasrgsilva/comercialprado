@@ -1,0 +1,107 @@
+/* *
+* Globals and Global Classes
+*
+* @author Rafael Antonio Lucio <rafaelantoniolucio@gmail.com>
+* */
+
+/* _____ GLOBALS _____ */
+*, :before, :after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    color: $gray;
+    font-size: 1.125em;
+    font-family: $font-amaticsc;
+}
+
+img, iframe {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+
+
+
+/* _____ HIDE CLASSES _____ */
+.hide {
+    display: none;
+}
+
+.hide-mobile {
+    @media (max-width: $mobile) {
+        display: none;
+    }
+}
+
+.hide-tablet-small {
+    @media (min-width: $tablet-small + 0.5em) {
+        display: none;
+    }
+}
+
+.hide-tablet {
+    @media (min-width: $tablet) {
+        display: none;
+    }
+}
+
+.hide-laptop {
+    @media (min-width: $laptop) {
+        display: none;
+    }
+}
+
+.hide-desktop {
+    @media (min-width: $desktop) {
+        display: none;
+    }
+}
+
+
+
+
+
+/* _____ SHOW CLASSES _____ */
+.show {
+    display: block;
+}
+
+
+
+
+
+/* _____ POSITION _____ */
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+
+
+
+
+/* _____ LINKS _____ */
+.thvk-link {
+    color: $gray;
+    text-decoration: none;
+    &:hover {
+        color: $gray;
+    }
+}
