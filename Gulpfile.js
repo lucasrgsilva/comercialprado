@@ -12,7 +12,7 @@ var gulp = require('gulp'),
 	reload = browserSync.reload;
 
 gulp.task('styles', function() {
-	return sass('app/styles/main.scss', { style: 'expanded' })
+	return sass('app/styles/main.scss', { style: 'expanded', includePaths: ['bower_components/foundation/scss']})
 		.pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
 		.pipe(gulp.dest('dist/css'))
 		.pipe(rename({suffix: '.min'}))
