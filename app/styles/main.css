@@ -90,7 +90,9 @@
 * @author Rafael Antonio Lucio <rafaelantoniolucio@gmail.com>
 * */
 /* _____ GLOBALS _____ */
-*, :before, :after {
+*,
+:before,
+:after {
   box-sizing: border-box;
 }
 
@@ -101,11 +103,12 @@ body {
   width: 100%;
   height: 100%;
   color: #555;
-  font-size: 1.125em;
+  font-size: 16px;
   font-family: "amaticsc_scregular", "Arial", sans-serif;
 }
 
-img, iframe {
+img,
+iframe {
   max-width: 100%;
   display: block;
   margin: 0 auto;
@@ -122,31 +125,31 @@ ul {
   display: none;
 }
 
-@media (max-width: 37.5em) {
+@media (max-width: 400px) {
   .hide-mobile {
     display: none;
   }
 }
 
-@media (min-width: 38em) {
+@media (min-width: 400px) and (max-width: 600px) {
   .hide-tablet-small {
     display: none;
   }
 }
 
-@media (min-width: 50em) {
+@media (min-width: 600px) and (max-width: 1000px) {
   .hide-tablet {
     display: none;
   }
 }
 
-@media (min-width: 64em) {
+@media (min-width: 1000px) and (max-width: 1280px) {
   .hide-laptop {
     display: none;
   }
 }
 
-@media (min-width: 70em) {
+@media (min-width: 1280px) {
   .hide-desktop {
     display: none;
   }
@@ -167,11 +170,11 @@ ul {
 }
 
 /* _____ LINKS _____ */
-.thvk-link {
+.link {
   color: #555;
   text-decoration: none;
 }
-.thvk-link:hover {
+.link:hover {
   color: #555;
 }
 
@@ -194,3 +197,32 @@ ul {
 * @author Rafael Antonio Lucio <rafaelantoniolucio@gmail.com>
 * */
 /* _____ HOME _____ */
+.comercial-prado {
+  background: url("../images/bg.png");
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 90%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.prado-promotions {
+  margin-top: 3em;
+}
+
+@media (min-width: 400px) {
+  .prado-nav-list-item {
+    width: 20%;
+    float: left;
+    margin-left: 6%;
+    min-width: 175px;
+  }
+  .prado-nav-list-item:first-child {
+    margin-left: 0;
+  }
+}
+
+.prado-promotion-img {
+  position: relative;
+}

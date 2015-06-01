@@ -3,12 +3,38 @@
 *
 * @author Rafael Antonio Lucio <rafaelantoniolucio@gmail.com>
 * */
-
 /* _____ HOME _____ */
-
-
-
-
 
 // Home layout basic
 // ==========================================================================
+.comercial-prado {
+	background: url('../images/bg.png');
+	background-position: right center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 90%;
+	max-width: $desktop;
+	margin: 0 auto;
+}
+
+.prado-main {}
+
+.prado-promotions {
+	margin-top: 3em;
+}
+
+.prado-nav-list-item {
+	@media (min-width: $mobile) {
+		width: 20%;
+		float: left;
+		margin-left: 6%;
+		min-width: 175px;
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+}
+
+.prado-promotion-img {
+	position: relative;
+}
