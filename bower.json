@@ -30,6 +30,7 @@
     "modernizr": "~2.8.3",
     "normalize.css": "~3.0.3",
     "angular-ui-router": "~0.2.15",
-    "restangular": "~1.5.1"
+    "restangular": "~1.5.1",
+    "angular-translate": "~2.7.2"
   }
 }
