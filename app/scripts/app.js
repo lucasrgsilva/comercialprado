@@ -7,6 +7,7 @@
 
 	angular.module('comercialprado', [
 		'ui.router',
+		'ngCookies',
 		'restangular',
 		'pascalprecht.translate'
 	]);

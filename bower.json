@@ -31,6 +31,9 @@
     "normalize.css": "~3.0.3",
     "angular-ui-router": "~0.2.15",
     "restangular": "~1.5.1",
-    "angular-translate": "~2.7.2"
+    "angular-translate": "~2.7.2",
+    "angular-cookies": "~1.4.0",
+    "moment": "~2.10.3",
+    "angular-mocks": "~1.4.0"
   }
 }
