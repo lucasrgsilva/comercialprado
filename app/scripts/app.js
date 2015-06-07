@@ -29,9 +29,5 @@
 		'$state'
 	];
 
-	function Run($rootScope, $cookieStore, $state) {
-		$rootScope.$on('$stateChangeStart', function () {
-			
-		});
-	}
+	function Run($rootScope, $cookieStore, $state) {}
 })();
