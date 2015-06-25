@@ -1,0 +1,66 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Orie Hirthe",
+      "email": "Norberto_Rau@hotmail.com"
+    },
+    {
+      "id": 2,
+      "name": "Solon Crona",
+      "email": "Billie48@yahoo.com"
+    }
+  ],
+  "banners": [
+    {
+      "id": 0,
+      "imagem": "http://lorempixel.com/980/300"
+    },
+    {
+      "id": 1,
+      "imagem": "http://lorempixel.com/980/300"
+    },
+    {
+      "id": 2,
+      "imagem": "http://lorempixel.com/980/300"
+    }
+  ],
+  "products": [
+    {
+      "id": 0,
+      "imagem": "http://lorempixel.com/200/200",
+      "description": "dicta mollitia ipsum magni sit voluptates totam quisquam facilis",
+      "price": 676
+    },
+    {
+      "id": 1,
+      "imagem": "http://lorempixel.com/200/200",
+      "description": "doloremque corporis et aut pariatur sunt vel",
+      "price": 855
+    },
+    {
+      "id": 2,
+      "imagem": "http://lorempixel.com/200/200",
+      "description": "maiores quas veritatis dolorem reiciendis rerum",
+      "price": 707
+    },
+    {
+      "id": 3,
+      "imagem": "http://lorempixel.com/200/200",
+      "description": "vel distinctio quod ut sed et id ad harum officiis",
+      "price": 482
+    },
+    {
+      "id": 4,
+      "imagem": "http://lorempixel.com/200/200",
+      "description": "autem incidunt repellendus suscipit illum harum molestiae aliquam quis quos",
+      "price": 299
+    },
+    {
+      "id": 5,
+      "imagem": "http://lorempixel.com/200/200",
+      "description": "reiciendis in eum non",
+      "price": 822
+    }
+  ]
+}

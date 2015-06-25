@@ -1,0 +1,58 @@
+
+<html>
+  <head>
+    <title>JSON Server</title>
+    <link href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/flatly/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <p>
+        <em>
+          Congrats! You're successfully running JSON Server.
+        </em>
+      </p>
+
+      <hr>
+
+      <h4>Routes</h4>
+      <p>
+        Here are the resources that JSON Server has loaded:
+      </p>
+      <p>
+        <ul id="resources">loading, please wait...</ul>
+      </p>
+
+      <p>
+        You can view database current state at any time:
+        <ul>
+          <li>
+            <a href="db">db</a>
+          </li>
+        </ul>
+      </p>
+
+      <p>
+        You can use any HTTP verbs (GET, POST, PUT, PATCH and DELETE) and access your resources from anywhere
+        using CORS and JSONP.
+      </p>
+
+    </div>
+
+
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script>
+      $(function() {
+        var path = location.pathname.replace('/', '').concat('/');
+
+        $.get(path+'db').then(function(data) {
+          $('#resources').empty();
+          $.each(data, function(key, value) {
+            $('#resources')
+              .append('<li><a href="'+ path + key + '">' + key + '</a></li>');
+          })
+        })
+      })
+    </script>
+  </body>
+</html>

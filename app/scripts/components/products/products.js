@@ -9,15 +9,16 @@
 	productsConfig.$inject = ['$stateProvider'];
 
 	function productsConfig($stateProvider) {
-		$stateProvider.state('products', {
-			url: '/',
-			views: {
-				'@': {
-					templateUrl: 'scripts/components/products/partials/products.html',
-					controller: 'ProductsController',
-					controllerAs: 'products'
+		$stateProvider
+			.state('products', {
+				url: '/',
+				views: {
+					'products': {
+						templateUrl: 'scripts/components/products/partials/products.html',
+						controller: 'ProductsController',
+						controllerAs: 'products'
+					}
 				}
-			}
-		});
+			});
 	}
 })();

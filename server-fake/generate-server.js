@@ -5,7 +5,7 @@ module.exports = function() {
 	return {
 		users: _.times(2, function(n) {
 			return {
-				id: _.uniqueId(),
+				id: parseInt(_.uniqueId(), 10),
 				name: faker.name.findName(),
 				email: faker.internet.email()
 			}

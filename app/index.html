@@ -32,18 +32,22 @@
 	<!--[if lt IE 9]><p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
 	
 
-	<main class="prado-main" ng-view="main"></main>
+	<main class="prado-main" ui-view="products"></main>
 
 
 	<!-- SCRIPTS -->
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="bower_components/lodash/lodash.min.js"></script>
-	<script src="bower_components/angular/angular.min.js"></script>
-	<script src="bower_components/angular-cookies/angular-cookies.js"></script>
-	<script src="bower_components/angular-translate/angular-translate.min.js"></script>
-	<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
-	<script src="bower_components/restangular/dist/restangular.min.js"></script>
+	
+	<script src="bower_components/angular/angular.js"></script>
 
+	<script src="bower_components/restangular/dist/restangular.js"></script>
+	<script src="bower_components/angular-cookies/angular-cookies.js"></script>
+	<script src="bower_components/angular-animate/angular-animate.js"></script>
+	<script src="bower_components/angular-translate/angular-translate.js"></script>
+	<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+
+	<script src="scripts/app.js"></script>
 
 	<!-- PRODUCTS -->
 	<script src="scripts/components/products/products.js"></script>
@@ -51,7 +55,6 @@
 	<!-- END PRODUCTS -->
 
 
-	<script src="scripts/app.js"></script>
 	<!-- END SCRIPTS -->
 </body>
 

@@ -34,6 +34,7 @@
     "angular-translate": "~2.7.2",
     "angular-cookies": "~1.4.0",
     "moment": "~2.10.3",
-    "angular-mocks": "~1.4.0"
+    "angular-mocks": "~1.4.0",
+    "angular-animate": "~1.4.1"
   }
 }
