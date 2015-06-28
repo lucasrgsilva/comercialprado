@@ -6,15 +6,13 @@
 
 	angular.module('comercialprado').controller('ProductsController', ProductsController);
 
-	ProductsController.$inject = ['Restangular'];
+	ProductsController.$inject = ['Products'];
 
-	function ProductsController(Restangular) {
+	function ProductsController(Products) {
 		var vm = this;
-		var users = Restangular.one('users');
 
-		users.getList().then(function (users) {
-			vm.users = users;
-			console.log(vm.users);
+		Products.getList().then(function (products) {
+			vm.products = products;
 		});
 	}
 })();

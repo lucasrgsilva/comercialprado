@@ -22,12 +22,15 @@ module.exports = function (config) {
 			'app/bower_components/angular/angular.js',
 			'app/bower_components/angular-mocks/angular-mocks.js',
 			'app/bower_components/restangular/dist/restangular.js',
+			'app/bower_components/angular-animate/angular-animate.js',
 			'app/bower_components/angular-cookies/angular-cookies.js',
 			'app/bower_components/angular-translate/angular-translate.js',
 			'app/bower_components/angular-ui-router/release/angular-ui-router.js',
 			// application
 			'app/scripts/app.js',
 			'app/scripts/**/*.js',
+			// partials
+			'app/scripts/**/*.html',
 			// tests
 			'test/**/*.js'
 		],
@@ -38,7 +41,14 @@ module.exports = function (config) {
 
 		// preprocess matching files before serving them to the browser
 		// available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
-		preprocessors: {},
+		ngHtml2JsPreprocessor: {
+			stripPrefix: 'app/',
+			moduleName: 'comercialprado'
+		},
+
+		preprocessors: {
+			'app/**/*.html': ['ng-html2js']
+		},
 
 
 		// test results reporter to use
@@ -49,7 +59,8 @@ module.exports = function (config) {
 		plugins: [
 			'karma-jasmine',
 			'karma-mocha-reporter',
-			'karma-phantomjs-launcher'
+			'karma-phantomjs-launcher',
+			'karma-ng-html2js-preprocessor'
 		],
 
 		// web server port

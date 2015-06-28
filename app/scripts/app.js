@@ -8,15 +8,15 @@
 	/**
 	 * module: comercialprado
 	 * config: function 
-	 * 		<param>: ngAnimate
-	 * 		<param>: $urlRouterProvider
-	 * 		<param>: $translateProvider
-	 * 		<description>: Set default language and set default URL
+	 * 		@param: ngAnimate
+	 * 		@param: $urlRouterProvider
+	 * 		@param: $translateProvider
+	 * 		@description: Set default language and set default URL
 	 * run: function
-	 * 		<param>: $rootScope
-	 * 		<param>: $cookieStore
-	 * 		<param>: $state
-	 * 		<description>: Set authentication sistem when access admin on sistem
+	 * 		@param: $rootScope
+	 * 		@param: $cookieStore
+	 * 		@param: $state
+	 * 		@description: Set authentication sistem when access admin on sistem
 	 */
 
 	angular.module('comercialprado', [

@@ -9,18 +9,20 @@
 <section class="prado-promotions">
 	<nav class="prado-nav-promotions">
 		<ul class="prado-nav-list">
-			<li class="prado-nav-list-item">
+			<li class="prado-nav-list-item" ng-repeat="product in products.products track by $index">
 				<article class="prado-promotion-item">
 					<header>
 						<h3>Oferta válida até 11/22/2019</h3>
 					</header>
 					<article class="prado-promotion-img">
-						<div class="prado-promotion-price"><a href="#">R$ 99.99</a></div>
-						<img src="http://lorempixel.com/250/200/" alt="Imagem thumb">
+						<div class="prado-promotion-price">
+							<a href="#">{{product.price | currency}}</a>
+						</div>
+						<img ng-src="{{product.imagem}}" alt="Imagem thumb">
 					</article>
 					<footer>
 						<p class="prado-promotion-desc">
-							Lorem ipsum dolor sit amet
+							{{product.description}}
 						</p>
 					</footer>
 				</article>

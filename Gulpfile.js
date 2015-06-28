@@ -46,7 +46,9 @@ gulp.task('images', function () {
 gulp.task('sass', function () {
 	return gulp.src(src.scss)
 		.pipe(sourcemaps.init())
-		.pipe(sass())
+		.pipe(sass({
+			style: 'expanded'
+		}))
 		.pipe(autoprefixer({
 			browsers: ['last 2 versions'],
 			cascade: false
@@ -57,7 +59,7 @@ gulp.task('sass', function () {
 			compatibility: 'ie8'
 		}) : gutil.noop())
 		.pipe(gulp.dest('dist/styles'))
-		.pipe(reload({
+		.pipe(browserSync.reload({
 			stream: true
 		}));
 });
@@ -71,6 +73,9 @@ gulp.task('scripts', function () {
 		.pipe(concat('scripts.min.js'))
 		.pipe(gutil.env.type === 'production' ? uglify() : gutil.noop())
 		.pipe(sourcemaps.write())
+		.pipe(browserSync.reload({
+			stream: true
+		}))
 		.pipe(gulp.dest('dist/scripts'));
 });
 
