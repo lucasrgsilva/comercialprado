@@ -19,9 +19,11 @@ module.exports = function() {
 		products: _.times(6, function(n) {
 			return {
 				id: n,
+				name: faker.name.findName(),
 				imagem: faker.image.imageUrl(200, 200),
-				description: faker.lorem.sentence(),
-				price: Math.floor(Math.random() * 1000)
+				shortDescription: faker.lorem.sentence(),
+				longDescription: faker.lorem.paragraph(),
+				price: parseFloat((Math.random() * 100).toFixed(2))
 			}
 		})
 	}

@@ -3,12 +3,12 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="keywords" content="Francisco Morato, Morato, Comercial Prado, deposito, construções, comercialpradoconstruções, construção, Materiais">
 	<meta name="description" content="Materiais para construção do basico ao acabamento">
 	<title>Comercial Prado</title>
-	<link rel="stylesheet" href="bower_components/normalize.css/normalize.css" type="text/css" />
-	<link rel="stylesheet" href="http://simonwhitaker.github.io/github-fork-ribbon-css/gh-fork-ribbon.css" type="text/css" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="bower_components/materialize/dist/css/materialize.min.css" media="screen,projection" />
 	<link rel="stylesheet" href="styles/main.css" type="text/css" />
 	<link rel="shortcut icon" href="/favicon.ico">
 	<script type="text/javascript" src="bower_components/modernizr/modernizr.js"></script>
@@ -30,32 +30,24 @@
 
 <body class="comercial-prado">
 	<!--[if lt IE 9]><p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
-	
-
 	<main class="prado-main" ui-view="products"></main>
-
-
 	<!-- SCRIPTS -->
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="bower_components/lodash/lodash.min.js"></script>
-	
+	<script src="bower_components/materialize/dist/js/materialize.min.js"></script>
 	<script src="bower_components/angular/angular.js"></script>
-
 	<script src="bower_components/restangular/dist/restangular.js"></script>
 	<script src="bower_components/angular-cookies/angular-cookies.js"></script>
 	<script src="bower_components/angular-animate/angular-animate.js"></script>
 	<script src="bower_components/angular-translate/angular-translate.js"></script>
 	<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-
+	<script src="bower_components/angular-materialize/src/angular-materialize.js"></script>
 	<script src="scripts/app.js"></script>
-
 	<!-- PRODUCTS -->
 	<script src="scripts/components/products/products.js"></script>
 	<script src="scripts/components/products/factories/products.js"></script>
 	<script src="scripts/components/products/controllers/products.js"></script>
 	<!-- END PRODUCTS -->
-
-
 	<!-- END SCRIPTS -->
 </body>
 

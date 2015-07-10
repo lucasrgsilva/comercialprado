@@ -24,6 +24,7 @@
 		'ui.router',
 		'ngCookies',
 		'restangular',
+		'ui.materialize',
 		'pascalprecht.translate'
 	]);
 

@@ -2,13 +2,13 @@
   "users": [
     {
       "id": 1,
-      "name": "Orie Hirthe",
-      "email": "Norberto_Rau@hotmail.com"
+      "name": "Lucius Stiedemann PhD",
+      "email": "Anais.Rolfson80@yahoo.com"
     },
     {
       "id": 2,
-      "name": "Solon Crona",
-      "email": "Billie48@yahoo.com"
+      "name": "Mckenzie Weimann",
+      "email": "Precious_Rohan32@hotmail.com"
     }
   ],
   "banners": [
@@ -28,39 +28,52 @@
   "products": [
     {
       "id": 0,
+      "name": "Izabella Hagenes",
       "imagem": "http://lorempixel.com/200/200",
-      "description": "dicta mollitia ipsum magni sit voluptates totam quisquam facilis",
-      "price": 676
+      "shortDescription": "ut et ex reprehenderit libero",
+      "longDescription": "eius ut tenetur perferendis sint est est asperiores\naliquam ut provident et esse beatae cum\ndicta aut ea ut ipsum iste facilis\nadipisci quas dolorem accusamus omnis\nlibero doloribus quo commodi",
+      "price": 44.96
     },
     {
       "id": 1,
+      "name": "Mr. Thalia Lesch",
       "imagem": "http://lorempixel.com/200/200",
-      "description": "doloremque corporis et aut pariatur sunt vel",
-      "price": 855
+      "shortDescription": "odit esse voluptate laborum voluptatem et",
+      "longDescription": "est explicabo qui qui ratione quidem architecto autem neque dolores\net doloremque distinctio earum dolores quia sed dicta\npraesentium quaerat quasi cum accusamus earum autem",
+      "price": 63.67
     },
     {
       "id": 2,
+      "name": "Dannie Medhurst",
       "imagem": "http://lorempixel.com/200/200",
-      "description": "maiores quas veritatis dolorem reiciendis rerum",
-      "price": 707
+      "shortDescription": "vel unde modi saepe quod numquam illo",
+      "longDescription": "libero optio rerum amet voluptatem\nprovident commodi quos\ndistinctio perferendis iure labore\nea veniam cumque dolorem praesentium magnam enim occaecati tempore repellendus\ndolores adipisci sit sit omnis sit et sunt\nratione qui veritatis tenetur sunt omnis voluptas",
+      "price": 77.18
     },
     {
       "id": 3,
+      "name": "Litzy Emard DVM",
       "imagem": "http://lorempixel.com/200/200",
-      "description": "vel distinctio quod ut sed et id ad harum officiis",
-      "price": 482
+      "shortDescription": "laudantium dolorem odit nam dolore earum",
+      "longDescription": "unde odit numquam\nerror labore id repudiandae sed\nrepellendus aut omnis nam cumque ut",
+      "price": 53.03
     },
     {
       "id": 4,
+      "name": "Melvina Smitham",
       "imagem": "http://lorempixel.com/200/200",
-      "description": "autem incidunt repellendus suscipit illum harum molestiae aliquam quis quos",
-      "price": 299
+      "shortDescription": "id et consequatur",
+      "longDescription": "aut rem dolorem provident pariatur quidem eum ut repudiandae ex\nrepudiandae qui recusandae\nvero delectus ex fuga odit officiis et quia quos\nmodi soluta reprehenderit laudantium dolor qui quisquam vel explicabo\natque nostrum sequi blanditiis vel natus eveniet",
+      "price": 73.82
     },
     {
       "id": 5,
+      "name": "Donavon Schneider",
       "imagem": "http://lorempixel.com/200/200",
-      "description": "reiciendis in eum non",
-      "price": 822
+      "shortDescription": "vel qui quaerat fugiat sed est ut esse",
+      "longDescription": "architecto ab eum exercitationem saepe sunt ut tenetur\nquo rerum recusandae distinctio ut omnis provident magni consequatur consequuntur\nnatus sit quia quae tempora consequatur reprehenderit\naperiam sit ea nisi ad occaecati enim dolorem culpa\nsint veniam est dicta blanditiis dolorem\nminima voluptas inventore dolorem ipsum odio est",
+      "price": 80.94
     }
-  ]
+  ],
+  "browser-sync": []
 }
