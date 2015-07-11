@@ -32,7 +32,7 @@
 		.config(Config)
 		.run(Run);
 
-	Config.$inject = ['$urlRouterProvider', '$translateProvider', 'RestangularProvider']
+	Config.$inject = ['$urlRouterProvider', '$translateProvider', 'RestangularProvider'];
 
 	function Config($urlRouterProvider, $translateProvider, RestangularProvider) {
 		$translateProvider.preferredLanguage('pt-BR');

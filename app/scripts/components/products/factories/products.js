@@ -3,7 +3,7 @@
 
 	angular.module('comercialprado').factory('Products', ProductsFactory);
 
-	ProductsFactory.$inject = ['Restangular']
+	ProductsFactory.$inject = ['Restangular'];
 
 	function ProductsFactory(Restangular) {
 		Restangular.extendModel('products', function (obj) {

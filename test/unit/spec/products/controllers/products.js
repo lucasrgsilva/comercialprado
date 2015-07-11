@@ -1,5 +1,6 @@
-describe('Products Controller', function () {
+describe('ProductsController', function () {
 
+	var ControllerFunction;
 	var ProductsController;
 
 	var ProductsServiceMock = {
@@ -16,30 +17,15 @@ describe('Products Controller', function () {
 	beforeEach(inject(function ($controller, _$rootScope_) {
 		$rootScope = _$rootScope_;
 
-		var scope = {
-			test: 1
-		};
-
-		ProductsController = $controller('ProductsController', {
-			$scope: scope,
+		ControllerFunction = $controller('ProductsController', {
 			Products: ProductsServiceMock
-		});
+		}, true);
+
+		ControllerFunction.instance.test = 1;
+		ProductsController = ControllerFunction();
 	}));
 
 	it('should behave...', function () {
 		expect(ProductsController.test).toBe(1);
 	});
-
-
-	// it('should return a array products', inject(function ($controller, $rootScope) {
-	// var scope = {};
-	// ProductsController = $controller('ProductsController', {
-	// 	$scope: scope,
-	// 	Products: ProductsServiceMock
-	// });
-
-	// $rootScope.$digest();
-
-	// expect(ProductsController.products).toBe({});
-	// }));
 });

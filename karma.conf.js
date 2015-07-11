@@ -25,6 +25,7 @@ module.exports = function (config) {
 			'app/bower_components/angular-animate/angular-animate.js',
 			'app/bower_components/angular-cookies/angular-cookies.js',
 			'app/bower_components/angular-translate/angular-translate.js',
+			'app/bower_components/angular-materialize/src/angular-materialize.js',
 			'app/bower_components/angular-ui-router/release/angular-ui-router.js',
 			// application
 			'app/scripts/app.js',
