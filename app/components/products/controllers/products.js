@@ -1,4 +1,5 @@
 /**
+ * Controller Products
  * @author Rafael Antonio Lucio <rafaelantioniolucio@gmail.com>
  */
 (function () {

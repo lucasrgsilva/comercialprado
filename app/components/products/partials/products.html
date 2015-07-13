@@ -1,0 +1,108 @@
+<div id="index-banner" class="parallax-container">
+	<div class="section no-pad-bot">
+		<div class="container">
+			<br>
+			<br>
+			<h1 class="header center teal-text text-lighten-2">Comercial Prado</h1>
+			<div class="row center">
+				<h5 class="header col s12 light">Vivendo para tornar a sua vida mais bonita e com baixo custo.</h5>
+			</div>
+			<div class="row center">
+				<a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Veja nossas promoções</a>
+			</div>
+			<br>
+			<br>
+		</div>
+	</div>
+</div>
+<div class="divider"></div>
+<section class="row section">
+	<div class="col xs s6 m4 l3" ng-repeat="product in products.products track by $index">
+		<div class="card hoverable">
+			<div class="card-image">
+				<img ng-src="images/{{product.imagem}}" alt="">
+				<span class="card-title prado-price">{{product.price | currency:'R$ '}}</span>
+			</div>
+			<div class="card-content">
+				<p class="truncate">{{product.shortDescription}}</p>
+			</div>
+			<div class="card-action">
+				<p class="activator">Válido até <a href="#">11/22/2019</a><span tooltipped data-position="top" data-tooltip="Veja a descrição completa."><i class="material-icons right prado-pointer">more_vert</i></span></p>
+			</div>
+			<div class="card-reveal" style="display: none; transform: translateY(0px);">
+				<span class="card-title grey-text text-darken-4">{{product.name}}<i class="material-icons right">close</i></span>
+				<p>{{product.longDescription}}</p>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="row section">
+	<form class="col s12">
+		<h4 class="header">Sugestões</h4>
+		<div class="row">
+			<div class="input-field col s6">
+				<input id="first_name" type="text" class="validate" ng-model="products.first_name">
+				<label for="first_name">First Name</label>
+			</div>
+			<div class="input-field col s6">
+				<input id="last_name" type="text" class="validate" ng-model="products.last_name">
+				<label for="last_name">Last Name</label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="input-field col s12">
+				<input id="email" type="email" class="validate" ng-model="products.email">
+				<label for="email">Email</label>
+			</div>
+		</div>
+	</form>
+	<form class="col s12">
+		<h4 class="header">Reclamações</h4>
+		<div class="row">
+			<div class="input-field s12">
+				<input id="complaint" name="complaint" type="checkbox" class="validate filled-in" ng-model="products.complaint">
+				<label for="complaint">Deseja se idenficar?</label>
+			</div>
+			<div class="row" ng-show="products.complaint">
+				<div class="input-field col s6">
+					<input id="first_name" type="text" class="validate" ng-model="products.first_name">
+					<label for="first_name">First Name</label>
+				</div>
+				<div class="input-field col s6">
+					<input id="last_name" type="text" class="validate" ng-model="products.last_name">
+					<label for="last_name">Last Name</label>
+				</div>
+			</div>
+			<div class="row">
+				<div class="input-field col s12">
+					<textarea id="complaintText" type="text" class="validate materialize-textarea" ng-model="products.complaintText"></textarea>
+					<label for="complaintText">Descreva aqui sua reclamação...</label>
+				</div>
+			</div>
+		</div>
+	</form>
+	<form class="col s12">
+		<h4 class="header">Trabalhe Conosco</h4>
+		<div class="row">
+			<div class="input-field col s6">
+				<input id="first_name" type="text" class="validate" ng-model="products.first_name">
+				<label for="first_name">First Name</label>
+			</div>
+			<div class="input-field col s6">
+				<input id="last_name" type="text" class="validate" ng-model="products.last_name">
+				<label for="last_name">Last Name</label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="file-field input-field">
+				<div class="btn">
+					<span>curriculum</span>
+					<input type="file">
+				</div>
+				<div class="file-path-wrapper">
+					<input class="file-path validate" type="text">
+				</div>
+			</div>
+		</div>
+	</form>
+</section>

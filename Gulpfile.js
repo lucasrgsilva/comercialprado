@@ -85,7 +85,7 @@ var proxy = require('proxy-middleware');
 var karma = require('karma').server;
 
 var src = {
-	scripts: 'app/scripts/**/*.js',
+	scripts: 'app/components/**/*.js',
 	scss: 'app/styles/**/*.scss',
 	images: 'app/images/**/*',
 	html: 'app/**/*.html'
@@ -128,6 +128,7 @@ gulp.task('sass', function () {
 			cascade: false
 		}))
 		.pipe(sourcemaps.write())
+		.pipe(concat('main.css'))
 		.pipe(gulp.dest('app/styles'))
 		.pipe(concat('styles.min.css'))
 		.pipe(gutil.env.type === 'production' ? minifycss({

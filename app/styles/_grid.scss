@@ -1,0 +1,14 @@
+/* *
+* Grid System with Materialize.css http://materializecss.com/grid.html
+*
+* @author Rafael Antonio Lucio <rafaelantoniolucio@gmail.com>
+* */
+/* _____ Grid System with Materialize.css _____ */
+
+// Home layout basic
+// ==========================================================================
+.row .col.xs {
+	@media (max-width: 480px) {
+		width: 100%;
+	}
+}

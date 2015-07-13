@@ -34,61 +34,7 @@ ul {
 	padding: 0;
 	list-style: none;
 }
-/* _____ HIDE CLASSES _____ */
 
-.hide {
-	display: none;
-}
-
-.hide-mobile {
-	@media (max-width: $mobile) {
-		display: none;
-	}
-}
-
-.hide-tablet-small {
-	@media (min-width: $mobile) and (max-width: $tablet) {
-		display: none;
-	}
-}
-
-.hide-tablet {
-	@media (min-width: $tablet) and (max-width: $laptop) {
-		display: none;
-	}
-}
-
-.hide-laptop {
-	@media (min-width: $laptop) and (max-width: $desktop) {
-		display: none;
-	}
-}
-
-.hide-desktop {
-	@media (min-width: $desktop) {
-		display: none;
-	}
-}
-/* _____ SHOW CLASSES _____ */
-
-.show {
-	display: block;
-}
-/* _____ POSITION _____ */
-
-.right {
-	float: right;
-}
-
-.left {
-	float: left;
-}
-/* _____ LINKS _____ */
-
-.link {
-	color: $gray;
-	text-decoration: none;
-	&:hover {
-		color: $gray;
-	}
+.prado-pointer {
+	cursor: pointer;
 }

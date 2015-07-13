@@ -30,7 +30,11 @@
 
 <body class="comercial-prado">
 	<!--[if lt IE 9]><p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
+
+	<header class="prado-header" ui-view="header"></header>
 	<main class="prado-main" ui-view="products"></main>
+	<main class="prado-login" ui-view="login"></main>
+	<footer class="prado-footer" ui-view="footer"></footer>
 	<!-- SCRIPTS -->
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="bower_components/lodash/lodash.min.js"></script>
@@ -42,12 +46,26 @@
 	<script src="bower_components/angular-translate/angular-translate.js"></script>
 	<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
 	<script src="bower_components/angular-materialize/src/angular-materialize.js"></script>
-	<script src="scripts/app.js"></script>
+	<script src="components/app.js"></script>
+	<script src="components/base/base.js"></script>
+	<!-- HEADER -->
+	<script src="components/header/controllers/header.js"></script>
+	<!-- END HEADER -->
+
+	<!-- FOOTER -->
+	<script src="components/footer/controllers/footer.js"></script>
+	<!-- END FOOTER -->
+
+	<!-- LOGIN -->
+	<script src="components/login/login.js"></script>
+	<script src="components/login/controllers/login.js"></script>
+	<!-- END LOGIN -->
+
 	<!-- PRODUCTS -->
-	<script src="scripts/components/products/products.js"></script>
-	<script src="scripts/components/products/factories/products.js"></script>
-	<script src="scripts/components/products/controllers/products.js"></script>
+	<script src="components/products/factories/products.js"></script>
+	<script src="components/products/controllers/products.js"></script>
 	<!-- END PRODUCTS -->
+
 	<!-- END SCRIPTS -->
 </body>
 
