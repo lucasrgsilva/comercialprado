@@ -1,0 +1,20 @@
+/* *
+* Login stylesheet component
+*
+* @author Rafael Antonio Lucio <rafaelantoniolucio@gmail.com>
+* */
+
+.card .prado-login-image {
+    margin-top: 40px;
+    img {
+        width: auto;
+    }
+}
+
+.card .prado-login-form {
+    @include clearfix();
+}
+
+.card .prado-login-action {
+    @include clearfix();
+}

@@ -8,6 +8,7 @@
 	<meta name="description" content="Materiais para construção do basico ao acabamento">
 	<title>Comercial Prado</title>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="bower_components/animate.css/animate.min.css" />
 	<link type="text/css" rel="stylesheet" href="bower_components/materialize/dist/css/materialize.min.css" media="screen,projection" />
 	<link rel="stylesheet" href="styles/main.css" type="text/css" />
 	<link rel="shortcut icon" href="/favicon.ico">
@@ -31,10 +32,10 @@
 <body class="comercial-prado">
 	<!--[if lt IE 9]><p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
 
-	<header class="prado-header" ui-view="header"></header>
-	<main class="prado-main" ui-view="products"></main>
-	<main class="prado-login" ui-view="login"></main>
-	<footer class="prado-footer" ui-view="footer"></footer>
+	<header class="prado-header animated" ui-view="header"></header>
+	<section class="prado-main animated" ui-view="products"></section>
+	<section class="prado-login animated" ui-view="login"></section>
+	<footer class="prado-footer animated" ui-view="footer"></footer>
 	<!-- SCRIPTS -->
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="bower_components/lodash/lodash.min.js"></script>

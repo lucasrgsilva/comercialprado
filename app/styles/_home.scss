@@ -16,31 +16,8 @@
 	max-width: $desktop;
 	margin: 0 auto;
 }
-
-.prado-main {}
-
-.prado-promotions {
-	margin-top: 3em;
-}
-
 .card .prado-price {
 	color: #ef5350;
 	background-color: yellow;
 	border-radius: 50%;
-}
-
-.prado-nav-list-item {
-	@media (min-width: $mobile) {
-		width: 20%;
-		float: left;
-		margin-left: 6%;
-		min-width: 175px;
-		&:first-child {
-			margin-left: 0;
-		}
-	}
-}
-
-.prado-promotion-img {
-	position: relative;
 }

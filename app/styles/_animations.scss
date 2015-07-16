@@ -6,23 +6,16 @@
 
 /* _____ ANIMATIONS _____ */
 
-@include keyframes(balanceArrow) {
-	0% {
-		transform: rotate(45deg);
-	}
-	20% {
-		transform: rotate(70deg);
-	}
-	40% {
-		transform: rotate(20deg);
-	}
-	60% {
-		transform: rotate(70deg);
-	}
-	80% {
-		transform: rotate(20deg);
-	}
-	100% {
-		transform: rotate(45deg);
-	}
+.prado-header.ng-enter,
+.prado-main.ng-enter,
+.prado-login.ng-enter,
+.prado-footer.ng-enter {
+	animation: fadeIn 1s;
+}
+
+.prado-header.ng-leave,
+.prado-main.ng-leave,
+.prado-login.ng-leave,
+.prado-footer.ng-leave {
+	animation: fadeOut 1s;
 }
