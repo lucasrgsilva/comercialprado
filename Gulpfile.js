@@ -151,16 +151,16 @@ gulp.task('serve', ['images', 'sass', 'jshint', 'scripts'], function () {
 	var proxyOptions = url.parse('http://localhost:4000');
 	proxyOptions.route = '/service';
 
-    browserSync.init({
-        server: {
-            baseDir: './app',
+	browserSync.init({
+		server: {
+			baseDir: './app',
 			middleware: [proxy(proxyOptions)]
-        }
-    });
+		}
+	});
 
-    gulp.watch(src.html).on('change', browserSync.reload);
-    gulp.watch(src.scripts, ['scripts']).on('change', browserSync.reload);
-    gulp.watch(src.scss, ['sass']).on('change', browserSync.reload);
+	gulp.watch(src.html).on('change', browserSync.reload);
+	gulp.watch(src.scripts, ['scripts']).on('change', browserSync.reload);
+	gulp.watch(src.scss, ['sass']).on('change', browserSync.reload);
 });
 
 gulp.task('default', ['clean', 'serve']);
