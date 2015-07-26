@@ -5,16 +5,16 @@
 * */
 
 .card .prado-login-image {
-    margin-top: 40px;
-    img {
-        width: auto;
-    }
+  margin-top: 40px;
+  img {
+    width: auto;
+  }
 }
 
 .card .prado-login-form {
-    @include clearfix();
+  @include clearfix();
 }
 
 .card .prado-login-action {
-    @include clearfix();
+  @include clearfix();
 }

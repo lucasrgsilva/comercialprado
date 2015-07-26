@@ -2,72 +2,75 @@
 <html lang="en" ng-app="comercialprado">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="keywords" content="Francisco Morato, Morato, Comercial Prado, deposito, construções, comercialpradoconstruções, construção, Materiais">
-	<meta name="description" content="Materiais para construção do basico ao acabamento">
-	<title>Comercial Prado</title>
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link type="text/css" rel="stylesheet" href="bower_components/animate.css/animate.min.css" />
-	<link type="text/css" rel="stylesheet" href="bower_components/materialize/dist/css/materialize.min.css" media="screen,projection" />
-	<link rel="stylesheet" href="styles/main.css" type="text/css" />
-	<link rel="shortcut icon" href="/favicon.ico">
-	<script type="text/javascript" src="bower_components/modernizr/modernizr.js"></script>
-	<script type="text/javascript">
-	var _gaq = _gaq || [];
-	_gaq.push(['_setAccount', 'UA-33886113-1']);
-	_gaq.push(['_trackPageview']);
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="keywords"
+        content="Francisco Morato, Morato, Comercial Prado, deposito, construções, comercialpradoconstruções, construção, Materiais">
+  <meta name="description" content="Materiais para construção do basico ao acabamento">
+  <title>Comercial Prado</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="bower_components/animate.css/animate.min.css"/>
+  <link type="text/css" rel="stylesheet" href="bower_components/materialize/dist/css/materialize.min.css"
+        media="screen,projection"/>
+  <link rel="stylesheet" href="styles/main.css" type="text/css"/>
+  <link rel="shortcut icon" href="/favicon.ico">
+  <script type="text/javascript" src="bower_components/modernizr/modernizr.js"></script>
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-33886113-1']);
+    _gaq.push(['_trackPageview']);
 
-	(function() {
-		var ga = document.createElement('script');
-		ga.type = 'text/javascript';
-		ga.async = true;
-		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		var s = document.getElementsByTagName('script')[0];
-		s.parentNode.insertBefore(ga, s);
-	})();
-	</script>
+    (function () {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
 </head>
 
 <body class="comercial-prado">
-	<!--[if lt IE 9]><p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
+<!--[if lt IE 9]><p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a
+  href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
 
-	<header class="prado-header animated" ui-view="header"></header>
-	<section class="prado-main animated" ui-view="products"></section>
-	<section class="prado-login animated" ui-view="login"></section>
-	<footer class="prado-footer animated" ui-view="footer"></footer>
-	<!-- SCRIPTS -->
-	<script src="bower_components/jquery/dist/jquery.min.js"></script>
-	<script src="bower_components/lodash/lodash.min.js"></script>
-	<script src="bower_components/materialize/dist/js/materialize.min.js"></script>
-	<script src="bower_components/angular/angular.js"></script>
-	<script src="bower_components/restangular/dist/restangular.js"></script>
-	<script src="bower_components/angular-cookies/angular-cookies.js"></script>
-	<script src="bower_components/angular-animate/angular-animate.js"></script>
-	<script src="bower_components/angular-translate/angular-translate.js"></script>
-	<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-	<script src="bower_components/angular-materialize/src/angular-materialize.js"></script>
-	<script src="components/app.js"></script>
-	<script src="components/base/base.js"></script>
-	<!-- HEADER -->
-	<script src="components/header/controllers/header.js"></script>
-	<!-- END HEADER -->
+<header class="prado-header animated" ui-view="header"></header>
+<section class="prado-main animated" ui-view="products"></section>
+<section class="prado-login animated" ui-view="login"></section>
+<footer class="prado-footer animated" ui-view="footer"></footer>
+<!-- SCRIPTS -->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/lodash/lodash.min.js"></script>
+<script src="bower_components/materialize/dist/js/materialize.min.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/restangular/dist/restangular.js"></script>
+<script src="bower_components/angular-cookies/angular-cookies.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/angular-translate/angular-translate.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="bower_components/angular-materialize/src/angular-materialize.js"></script>
+<script src="components/app.js"></script>
+<script src="components/base/base.js"></script>
+<!-- HEADER -->
+<script src="components/header/controllers/header.js"></script>
+<!-- END HEADER -->
 
-	<!-- FOOTER -->
-	<script src="components/footer/controllers/footer.js"></script>
-	<!-- END FOOTER -->
+<!-- FOOTER -->
+<script src="components/footer/controllers/footer.js"></script>
+<!-- END FOOTER -->
 
-	<!-- LOGIN -->
-	<script src="components/login/login.js"></script>
-	<script src="components/login/controllers/login.js"></script>
-	<!-- END LOGIN -->
+<!-- LOGIN -->
+<script src="components/login/login.js"></script>
+<script src="components/login/controllers/login.js"></script>
+<!-- END LOGIN -->
 
-	<!-- PRODUCTS -->
-	<script src="components/products/factories/products.js"></script>
-	<script src="components/products/controllers/products.js"></script>
-	<!-- END PRODUCTS -->
+<!-- PRODUCTS -->
+<script src="components/products/factories/products.js"></script>
+<script src="components/products/controllers/products.js"></script>
+<!-- END PRODUCTS -->
 
-	<!-- END SCRIPTS -->
+<!-- END SCRIPTS -->
 </body>
 
 </html>

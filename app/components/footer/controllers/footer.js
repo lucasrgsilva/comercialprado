@@ -3,13 +3,13 @@
  * @author Rafael Antonio Lucio <rafaelantioniolucio@gmail.com>
  */
 (function () {
-	'use strict';
+  'use strict';
 
-	angular.module('comercialprado').controller('FooterController', FooterController);
+  angular.module('comercialprado').controller('FooterController', FooterController);
 
-	FooterController.$inject = [];
+  FooterController.$inject = [];
 
-	function FooterController() {
-		var vm = this;
-	}
+  function FooterController() {
+    var vm = this;
+  }
 })();

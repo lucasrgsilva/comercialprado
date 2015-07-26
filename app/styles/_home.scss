@@ -8,16 +8,17 @@
 // Home layout basic
 // ==========================================================================
 .comercial-prado {
-	background: url('../images/bg.png');
-	background-position: right center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: 90%;
-	max-width: $desktop;
-	margin: 0 auto;
+  background: url('../images/bg.png');
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 90%;
+  max-width: $desktop;
+  margin: 0 auto;
 }
+
 .card .prado-price {
-	color: #ef5350;
-	background-color: yellow;
-	border-radius: 50%;
+  color: #ef5350;
+  background-color: yellow;
+  border-radius: 50%;
 }

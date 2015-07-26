@@ -4,12 +4,10 @@
 * @author Rafael Antonio Lucio <rafaelantoniolucio@gmail.com>
 * */
 /* _____ MAIN _____ */
-
 @import "variables";
 @import "mixins";
 @import "fontface";
 /* _____ COMPONENTS _____ */
-
 @import "grid";
 @import "animations";
 @import "global";
@@ -18,6 +16,5 @@
 @import "header";
 @import "footer";
 /* _____ LAYOUTS _____ */
-
 @import "home";
 @import "login";

@@ -3,13 +3,13 @@
  * @author Rafael Antonio Lucio <rafaelantioniolucio@gmail.com>
  */
 (function () {
-	'use strict';
+  'use strict';
 
-	angular.module('comercialprado').controller('LoginController', LoginController);
+  angular.module('comercialprado').controller('LoginController', LoginController);
 
-	LoginController.$inject = [];
+  LoginController.$inject = [];
 
-	function LoginController() {
-		var vm = this;
-	}
+  function LoginController() {
+    var vm = this;
+  }
 })();

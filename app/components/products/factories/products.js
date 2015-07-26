@@ -1,15 +1,15 @@
 (function () {
-	'use strict';
+  'use strict';
 
-	angular.module('comercialprado').factory('Products', ProductsFactory);
+  angular.module('comercialprado').factory('Products', ProductsFactory);
 
-	ProductsFactory.$inject = ['Restangular'];
+  ProductsFactory.$inject = ['Restangular'];
 
-	function ProductsFactory(Restangular) {
-		Restangular.extendModel('products', function (obj) {
-			return angular.extend(obj, {});
-		});
+  function ProductsFactory(Restangular) {
+    Restangular.extendModel('products', function (obj) {
+      return angular.extend(obj, {});
+    });
 
-		return Restangular.all('products');
-	}
+    return Restangular.all('products');
+  }
 }());
