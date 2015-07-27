@@ -13,12 +13,16 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 90%;
-  max-width: $desktop;
   margin: 0 auto;
+  max-width: 1246px;
 }
 
 .card .prado-price {
-  color: #ef5350;
+  color: $red;
   background-color: yellow;
   border-radius: 50%;
+}
+
+.card .card-action a {
+  color: $orange;
 }

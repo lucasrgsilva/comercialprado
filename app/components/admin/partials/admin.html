@@ -1,0 +1,74 @@
+<div class="prado-admin-products">
+  <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+    <button class="btn-floating btn-large waves-effect waves-light red" type="button" name="action">
+      <i class="material-icons">add</i>
+    </button>
+  </div>
+  <div class="row card" ng-repeat="product in products.products track by $index">
+    <div class="col s12 m3">
+      <img ng-src="images/{{product.imagem}}" alt="">
+    </div>
+    <div class="col s12 m8">
+      <div class="input-field col s12 m6">
+        <input ng-disabled="true" type="text" ng-model="product.name"/>
+        <label for="">Nome</label>
+      </div>
+      <div class="input-field col s12 m6">
+        <input ng-disabled="true" type="text" ng-model="product.price"/>
+        <label for="">Preço</label>
+      </div>
+      <div class="input-field col s12 m6">
+        <input ng-disabled="true" type="text" ng-model="product.shortDescription"/>
+        <label for="">Descrição pequena</label>
+      </div>
+      <div class="input-field col s12 m6">
+        <label for="">Valido até:</label>
+        <input ng-disabled="true" type="text" input-date="" format="dd/mm/yyyy" ng-model="product.date"
+               class="datepicker"/>
+      </div>
+      <div class="input-field col s12 m12">
+        <textarea ng-disabled="true" class="materialize-textarea" ng-model="product.longDescription"></textarea>
+        <label>Descrição longa</label>
+      </div>
+    </div>
+    <div class="col s12 m1">
+      <button class="btn-floating waves-effect waves-light prado-admin-actions" type="button" name="action">
+        <i class="material-icons">edit</i>
+      </button>
+    </div>
+  </div>
+  <div class="row card">
+    <div class="col s12 m3 prado-admin-actions">
+      <i class="material-icons" style="font-size: 320px;">image</i>
+    </div>
+    <div class="col s12 m8">
+      <div class="input-field col s12 m6">
+        <input type="text" ng-model="product.name"/>
+        <label for="">Nome</label>
+      </div>
+      <div class="input-field col s12 m6">
+        <input type="text" ng-model="product.price"/>
+        <label for="">Preço</label>
+      </div>
+      <div class="input-field col s12 m6">
+        <input type="text" ng-model="product.shortDescription"/>
+        <label for="">Descrição pequena</label>
+      </div>
+      <div class="input-field col s12 m6">
+        <label for="">Valido até:</label>
+        <input type="text" input-date="" format="dd/mm/yyyy" ng-model="product.date" class="datepicker"/>
+      </div>
+      <div class="input-field col s12 m12">
+        <textarea class="materialize-textarea" ng-model="product.longDescription"></textarea>
+        <label>Descrição longa</label>
+      </div>
+    </div>
+    <div class="col s12 m1">
+      <div class="row">
+        <button class="btn-floating waves-effect waves-light prado-admin-actions" type="button" name="action">
+          <i class="material-icons">edit</i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

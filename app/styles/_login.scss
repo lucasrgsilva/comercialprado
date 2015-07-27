@@ -4,6 +4,12 @@
 * @author Rafael Antonio Lucio <rafaelantoniolucio@gmail.com>
 * */
 
+.prado-login .col {
+  float: none;
+  display: block;
+  margin: 2em auto !important;
+}
+
 .card .prado-login-image {
   margin-top: 40px;
   img {
