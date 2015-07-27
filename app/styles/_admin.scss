@@ -1,3 +1,7 @@
-.btn-floating.prado-admin-actions {
-    margin: 1em;
+.prado-admin-group-actions {
+  .row:first-child {
+    .prado-admin-actions {
+      margin-top: 1em;
+    }
+  }
 }
