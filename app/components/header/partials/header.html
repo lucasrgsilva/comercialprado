@@ -6,11 +6,10 @@
       </a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li ui-sref-active="active"><a ui-sref="home">Promoções</a></li>
-        <li ui-sref-active="active"><a>Sugestões</a></li>
-        <li ui-sref-active="active"><a>Reclamações</a></li>
-        <li ui-sref-active="active"><a>Trabalhe Conosco</a></li>
+        <li ui-sref-active="active"><a ng-click="header.scrollTo('sugestoes')">Sugestões</a></li>
+        <li ui-sref-active="active"><a ng-click="header.scrollTo('reclamacoes')">Reclamações</a></li>
+        <li ui-sref-active="active"><a ng-click="header.scrollTo('trabalheConosco')">Trabalhe Conosco</a></li>
         <li ui-sref-active="active"><a ui-sref="login">Login</a></li>
-        <li ui-sref-active="active"><a>Logout</a></li>
       </ul>
     </div>
   </div>

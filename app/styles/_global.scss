@@ -37,3 +37,9 @@ ul {
 .prado-pointer {
   cursor: pointer;
 }
+
+.row .col.xs {
+  @media (max-width: 480px) {
+    width: 100%;
+  }
+}

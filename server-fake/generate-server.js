@@ -23,8 +23,9 @@ module.exports = function() {
 				imagem: faker.image.imageUrl(200, 200),
 				shortDescription: faker.lorem.sentence(),
 				longDescription: faker.lorem.paragraph(),
-				price: parseFloat((Math.random() * 100).toFixed(2))
+				price: parseFloat((Math.random() * 100).toFixed(2)),
+        date: new Date()
 			}
 		})
 	}
-}
+};

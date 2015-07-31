@@ -7,9 +7,15 @@
 
   angular.module('comercialprado').controller('HeaderController', HeaderController);
 
-  HeaderController.$inject = [];
+  HeaderController.$inject = ['$location', '$anchorScroll'];
 
-  function HeaderController() {
+  function HeaderController($location, $anchorScroll) {
     var vm = this;
+    vm.scrollTo = scrollTo;
+
+    function scrollTo(id) {
+      $location.hash(id);
+      $anchorScroll();
+    }
   }
 })();

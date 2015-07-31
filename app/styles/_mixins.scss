@@ -32,14 +32,25 @@
 
 // ANIMATIONS
 // ==========================================================================
-@mixin animations($name, $duration, $function: ease) {
-  animation: $name $duration $function;
-  /* Firefox: */
-  -moz-animation: $name $duration $function;
-  /* Safari and Chrome: */
-  -webkit-animation: $name $duration $function;
-  /* Opera: */
-  -o-animation: $name $duration $function;
+@mixin animations($name, $duration: 1s, $function: ease) {
+  -webkit-animation-direction: $duration;
+  -moz-animation-direction: $duration;
+  -o-animation-direction: $duration;
+  animation-direction: $duration;
+
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+// Effect
+// ==========================================================================
+@mixin effect($name) {
+  -webkit-animation-name: $name;
+  -moz-animation-name: $name;
+  -o-animation-name: $name;
+  animation-name: $name;
 }
 
 // FUNCTION ANIMATE KEYFRAME

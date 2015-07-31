@@ -5,17 +5,17 @@
 * */
 
 /* _____ ANIMATIONS _____ */
-
-.prado-header.ng-enter,
-.prado-main.ng-enter,
-.prado-login.ng-enter,
-.prado-footer.ng-enter {
-  animation: fadeIn 1s;
+.ng-enter {
+  transition: all 0.75s;
+  opacity: 0;
 }
-
-.prado-header.ng-leave,
-.prado-main.ng-leave,
-.prado-login.ng-leave,
-.prado-footer.ng-leave {
-  animation: fadeOut 1s;
+.ng-enter-active {
+  opacity: 1;
+}
+.ng-leave {
+  transition: all 0.75s;
+  opacity: 1;
+}
+.ng-leave-active {
+  opacity: 0;
 }

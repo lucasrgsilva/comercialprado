@@ -35,13 +35,15 @@
 <!--[if lt IE 9]><p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a
   href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
 
-<header class="prado-header animated" ui-view="header"></header>
-<div class="row">
-  <section class="prado-main animated" ui-view="products"></section>
-  <section class="prado-main-admin animated" ui-view="adminProducts"></section>
-  <section class="prado-login animated" ui-view="login"></section>
+<div class="comercialprado-app">
+  <header class="prado-header" ui-view="header"></header>
+  <div class="row">
+    <section class="prado-products" ui-view="products"></section>
+    <section class="prado-main-admin" ui-view="adminProducts"></section>
+    <section class="prado-login" ui-view="login"></section>
+  </div>
+  <footer class="prado-footer" ui-view="footer"></footer>
 </div>
-<footer class="prado-footer animated" ui-view="footer"></footer>
 
 <!-- SCRIPTS -->
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
