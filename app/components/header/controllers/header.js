@@ -11,9 +11,9 @@
 
   function HeaderController($location, $anchorScroll) {
     var vm = this;
-    vm.scrollTo = scrollTo;
+    vm.scrollTo = anchorTo;
 
-    function scrollTo(id) {
+    function anchorTo(id) {
       $location.hash(id);
       $anchorScroll();
     }

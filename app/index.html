@@ -13,21 +13,23 @@
   <link type="text/css" rel="stylesheet" href="bower_components/materialize/dist/css/materialize.min.css"
         media="screen,projection"/>
   <link rel="stylesheet" href="styles/main.css" type="text/css"/>
-  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="shortcut icon" href="favicon.ico">
   <script type="text/javascript" src="bower_components/modernizr/modernizr.js"></script>
-  <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-33886113-1']);
-    _gaq.push(['_trackPageview']);
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+          (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-    (function () {
-      var ga = document.createElement('script');
-      ga.type = 'text/javascript';
-      ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(ga, s);
-    })();
+    ga('create', 'UA-65796795-1', 'auto');
+    ga('send', 'pageview');
   </script>
 </head>
 
@@ -47,9 +49,11 @@
 
 <!-- SCRIPTS -->
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="http://maps.google.com/maps/api/js"></script>
 <script src="bower_components/lodash/lodash.min.js"></script>
 <script src="bower_components/materialize/dist/js/materialize.min.js"></script>
 <script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/ngmap/build/scripts/ng-map.js"></script>
 <script src="bower_components/restangular/dist/restangular.js"></script>
 <script src="bower_components/angular-cookies/angular-cookies.js"></script>
 <script src="bower_components/angular-animate/angular-animate.js"></script>
@@ -57,7 +61,12 @@
 <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
 <script src="bower_components/angular-materialize/src/angular-materialize.js"></script>
 <script src="components/app.js"></script>
+
+<!-- BASE -->
 <script src="components/base/base.js"></script>
+<script src="components/base/directives/fileReader.js"></script>
+<!-- END BASE -->
+
 <!-- HEADER -->
 <script src="components/header/controllers/header.js"></script>
 <!-- END HEADER -->

@@ -20,6 +20,7 @@
    */
 
   angular.module('comercialprado', [
+    'ngMap',
     'ngAnimate',
     'ui.router',
     'ngCookies',

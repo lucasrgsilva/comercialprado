@@ -18,8 +18,10 @@ module.exports = function (config) {
       // libs
       'app/bower_components/jquery/dist/jquery.js',
       'app/bower_components/lodash/lodash.js',
+      'http://maps.google.com/maps/api/js',
       'app/bower_components/moment/moment.js',
       'app/bower_components/angular/angular.js',
+      'app/bower_components/ngmap/build/scripts/ng-map.js',
       'app/bower_components/angular-mocks/angular-mocks.js',
       'app/bower_components/restangular/dist/restangular.js',
       'app/bower_components/angular-animate/angular-animate.js',

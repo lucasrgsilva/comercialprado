@@ -4,14 +4,12 @@
       <br>
       <br>
 
-      <h1 class="header center teal-text text-lighten-2">Comercial Prado</h1>
+      <h1 class="header center teal-text text-lighten-2">COMERCIAL PRADO</h1>
+
+      <h3 class="header center teal-text text-lighten-2">MATERIAIS PARA CONSTRUÇÃO</h3>
 
       <div class="row center">
         <h5 class="header col s12 light">Vivendo para tornar a sua vida mais bonita e com baixo custo.</h5>
-      </div>
-      <div class="row center">
-        <a ui-sref="home" id="download-button"
-           class="btn-large waves-effect waves-light teal lighten-1">Veja nossas promoções</a>
       </div>
       <br>
       <br>
@@ -44,76 +42,106 @@
   </div>
 </section>
 <section class="row section">
-  <form class="col s12" id="sugestoes">
+  <form class="col s12" id="sugestoes" ng-init="products.suggestions = {}">
     <h4 class="header">Sugestões</h4>
 
     <div class="row">
-      <div class="input-field col s6">
-        <input id="first_name" type="text" class="validate" ng-model="products.first_name">
-        <label for="first_name">First Name</label>
-      </div>
-      <div class="input-field col s6">
-        <input id="last_name" type="text" class="validate" ng-model="products.last_name">
-        <label for="last_name">Last Name</label>
+      <div class="input-field s12">
+        <input id="suggestionsIdentify" name="identify" type="checkbox" class="validate filled-in"
+               ng-model="products.suggestions.identify">
+        <label for="suggestionsIdentify">Deseja se idenficar?</label>
       </div>
     </div>
+
+    <div class="row" ng-show="products.suggestions.identify">
+      <div class="input-field col s6">
+        <input id="suggestionsName" type="text" class="validate" ng-model="products.suggestions.name">
+        <label for="suggestionsName">Nome</label>
+      </div>
+
+      <div class="input-field col s6">
+        <input id="suggestionsPhone" type="tel" class="validate" ng-model="products.suggestions.phone">
+        <label for="suggestionsPhone">Telefone</label>
+      </div>
+
+      <div class="input-field col s12">
+        <input id="suggestionsEmail" type="email" class="validate" ng-model="products.suggestions.email">
+        <label for="suggestionsEmail">Email</label>
+      </div>
+    </div>
+
     <div class="row">
       <div class="input-field col s12">
-        <input id="email" type="email" class="validate" ng-model="products.email">
-        <label for="email">Email</label>
+        <textarea id="suggestion" class="validate materialize-textarea"
+                  ng-model="products.suggestions.suggestion"></textarea>
+        <label for="suggestion">Descreva aqui sua sugestão...</label>
       </div>
     </div>
   </form>
-  <form class="col s12" id="reclamacoes">
+  <form class="col s12" id="reclamacoes" ng-init="products.complaints = {}">
     <h4 class="header">Reclamações</h4>
 
     <div class="row">
       <div class="input-field s12">
-        <input id="complaint" name="complaint" type="checkbox" class="validate filled-in" ng-model="products.complaint">
-        <label for="complaint">Deseja se idenficar?</label>
+        <input id="complaintsIdentify" name="identify" type="checkbox" class="validate filled-in"
+               ng-model="products.complaints.identify">
+        <label for="complaintsIdentify">Deseja se idenficar?</label>
       </div>
-      <div class="row" ng-show="products.complaint">
-        <div class="input-field col s6">
-          <input id="first_name" type="text" class="validate" ng-model="products.first_name">
-          <label for="first_name">First Name</label>
-        </div>
-        <div class="input-field col s6">
-          <input id="last_name" type="text" class="validate" ng-model="products.last_name">
-          <label for="last_name">Last Name</label>
-        </div>
+    </div>
+
+    <div class="row" ng-show="products.complaints.identify">
+      <div class="input-field col s6">
+        <input id="complaintsName" type="text" class="validate" ng-model="products.complaints.name">
+        <label for="complaintsName">Nome</label>
       </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <textarea id="complaintText" type="text" class="validate materialize-textarea"
+
+      <div class="input-field col s6">
+        <input id="complaintsPhone" type="tel" class="validate" ng-model="products.complaints.phone">
+        <label for="complaintsPhone">Telefone</label>
+      </div>
+
+      <div class="input-field col s12">
+        <input id="complaintsEmail" type="text" class="validate" ng-model="products.complaints.email">
+        <label for="complaintsEmail">E-mail</label>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="input-field col s12">
+          <textarea id="complaintText" class="validate materialize-textarea"
                     ng-model="products.complaintText"></textarea>
-          <label for="complaintText">Descreva aqui sua reclamação...</label>
-        </div>
+        <label for="complaintText">Descreva aqui sua reclamação...</label>
       </div>
     </div>
   </form>
-  <form class="col s12" id="trabalheConosco">
-    <h4 class="header">Trabalhe Conosco</h4>
 
+  <form class="col s12" id="trabalheConosco" ng-init="products.work = {}">
+    <h4 class="header">Trabalhe Conosco</h4>
+    <pre>{{products.work | json}}</pre>
     <div class="row">
-      <div class="input-field col s6">
-        <input id="first_name" type="text" class="validate" ng-model="products.first_name">
-        <label for="first_name">First Name</label>
-      </div>
-      <div class="input-field col s6">
-        <input id="last_name" type="text" class="validate" ng-model="products.last_name">
-        <label for="last_name">Last Name</label>
+      <div class="input-field col s12">
+        <input id="workName" type="text" class="validate" ng-model="products.work.name">
+        <label for="workName">Nome Completo</label>
       </div>
     </div>
+
     <div class="row">
       <div class="file-field input-field">
         <div class="btn">
           <span>curriculum</span>
-          <input type="file">
+          <input type="file" ng-model="products.work.file" file-reader>
         </div>
         <div class="file-path-wrapper">
-          <input class="file-path validate" type="text">
+          <input class="file-path validate" type="text" ng-model="products.work.file">
         </div>
       </div>
     </div>
+
   </form>
+</section>
+<section id="localizacao">
+  <h4 class="header">Localização</h4>
+  <map center="-23.275592, -46.741726" zoom="16">
+    <marker position="-23.275592, -46.741726" title="Comercial Prado"></marker>
+  </map>
 </section>
