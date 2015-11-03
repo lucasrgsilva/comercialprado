@@ -1,0 +1,66 @@
+{
+  "name": "comercialprado",
+  "version": "0.0.1",
+  "description": "A simple App using ES6, AngularJS 1.4 and Webpack",
+  "main": "lib/index.js",
+  "scripts": {
+    "devserver": "webpack-dev-server --colors --port 8081 --json --progress",
+    "dumpdev": "rm -rf www/* && webpack",
+    "dumpprod": "rm -rf www/* && webpack --release --config webpack.config.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:4data/juspro-client.git"
+  },
+  "author": [
+    {
+      "name": "Rafael Antonio Lucio",
+      "email": "rafaelantoniolucio@gmail.com",
+      "url": "https://br.linkedin.com/in/rafaelantoniolucio"
+    },
+    {
+      "name": "Guilherme Mangabeira Gregio",
+      "email": "guilherme@gregio.net",
+      "url": "https://br.linkedin.com/in/gregionet"
+    }
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer-loader": "^2.0.0",
+    "babel-core": "^5.6.15",
+    "babel-loader": "^5.2.2",
+    "css-loader": "^0.9.1",
+    "deep-extend": "^0.4.0",
+    "exports-loader": "^0.6.2",
+    "expose-loader": "^0.6.0",
+    "file-loader": "^0.8.1",
+    "html-loader": "^0.2.3",
+    "html-webpack-plugin": "^1.5.0",
+    "json-loader": "^0.5.1",
+    "ng-annotate-loader": "~0.0.6",
+    "path": "^0.4.9",
+    "sass-loader": "^1.0.0",
+    "style-loader": "^0.8.3",
+    "util": "^0.10.3",
+    "webpack": "~1.10.0",
+    "webpack-dev-server": "~1.10.0"
+  },
+  "dependencies": {
+    "angular": "^1.4.7",
+    "angular-animate": "^1.4.7",
+    "angular-aria": "^1.4.7",
+    "angular-messages": "^1.4.7",
+    "angular-sanitize": "^1.4.7",
+    "angular-storage": "0.0.13",
+    "angular-translate": "^2.8.0",
+    "angular-ui-router": "^0.2.15",
+    "bootstrap-sass": "^3.3.5",
+    "font-awesome": "^4.4.0",
+    "glob": "~5.0.5",
+    "jquery": "^2.1.4",
+    "lodash": "^3.9.3",
+    "moment": "^2.10.6",
+    "object-sizeof": "~1.0.0",
+    "restangular": "^1.5.1"
+  }
+}
