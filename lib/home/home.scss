@@ -1,3 +1,9 @@
-.home {
-    //My CSS here.
+.card .prado-price {
+  color: $brand-red;
+  background-color: yellow;
+  border-radius: 50%;
+}
+
+.card .card-action a {
+  color: $brand-orange;
 }

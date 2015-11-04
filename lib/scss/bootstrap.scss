@@ -10,10 +10,14 @@ $icons-font-path: '~materialize-css/font/material-design-icons/' !default;
 $roboto-font-path: '~materialize-css/font/roboto/' !default;
 @import "../../node_modules/materialize-css/sass/materialize";
 
-body {
-    background: url('../images/bg.png');
-    background-position: right center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 90%;
+@import "../home/home";
+
+.comercial-prado {
+  background: url('../images/bg.png');
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 90%;
+  max-width: 1246px;
+  margin: 0 auto;
 }

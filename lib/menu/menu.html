@@ -1,14 +1,18 @@
-<div class="row">
-    <h1 class="col-md-3">
-    	<img src="../images/logo-header.png" alt="comercial prado materiais para construcoes">
-	</h1>
-    <nav class="col-md-9">
-        <ul class="row">
-            <li class="col-md-2">Promoções</li>
-            <li class="col-md-2">Sugestões</li>
-            <li class="col-md-2">Reclamações</li>
-            <li class="col-md-2">Trabalhe conosco</li>
-            <li class="col-md-2">Localização</li>
-        </ul>
-    </nav>
-</div>
+<nav>
+    <div class="nav-wrapper row">
+        <div class="col s12">
+            <a href="#" class="brand-logo">
+                <img src="../images/logo-header.png" alt="Comercial Prado Logo">
+            </a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li ui-sref-active="active"><a ui-sref="home">Promoções</a></li>
+                <li ui-sref-active="active"><a ng-click="header.scrollTo('sugestoes')">Sugestões</a></li>
+                <li ui-sref-active="active"><a ng-click="header.scrollTo('reclamacoes')">Reclamações</a></li>
+                <li ui-sref-active="active"><a ng-click="header.scrollTo('trabalheConosco')">Trabalhe Conosco</a></li>
+                <li ui-sref-active="active"><a ng-click="header.scrollTo('localizacao')">Localização</a></li>
+                <li ui-sref-active="active"><a ng-click="header.scrollTo('contatos')">Contatos</a></li>
+                <li ui-sref-active="active"><a ui-sref="login">Login</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
