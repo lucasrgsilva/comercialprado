@@ -54,6 +54,11 @@ module.exports = {
         ]
     },
     plugins: [
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery',
+            'Hammer': 'hammerjs/hammer'
+        }),
         new prototype.plugin.translation({
             languages: ['en'],
             output: 'locales'
