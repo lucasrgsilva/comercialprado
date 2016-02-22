@@ -1,9 +1,13 @@
 .card .prado-price {
-  color: $brand-red;
-  background-color: yellow;
-  border-radius: 50%;
+    color: $brand-red;
+    background-color: yellow;
+    border-radius: 50%;
 }
 
 .card .card-action a {
-  color: $brand-orange;
+    color: $brand-orange;
+}
+
+.angular-google-map-container {
+    height: 400px;
 }
