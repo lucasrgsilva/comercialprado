@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login Comercial Prado - Materiais para Construção</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/login.css">
+</head>
+
+<body>
+    <section class="container login">
+        <main>
+            <form>
+                <fieldset class="fieldset active">
+                    <legend>Login</legend>
+                    <div class="form-group">
+                        <label for="">E-mail</label>
+                        <input class="form-control" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Senha</label>
+                        <a class="pull-right" href="#lostpass">Esqueceu a senha?</a>
+                        <input class="form-control" type="text">
+                    </div>
+                    <button class="btn btn-success pull-right" type="button">Entrar</button>
+                    <p class="text-left">
+                        Criar novo cadastro? 
+                        <a href="#createlogin">Criar uma conta</a>
+                    </p>
+                </fieldset>
+                <fieldset class="fieldset">
+                    <legend>Redefinir sua senha</legend>
+                    <p>
+                        Informe seu endereço de e-mail e inviaremos um e-mail a você para redefinir sua senha
+                    </p>
+                    <div class="form-group">
+                        <input class="form-control" type="text" placeholder="Informe seu endereço de e-mail">
+                    </div>
+                    <button class="btn btn-success" type="button">Enviar e-mail para redefinir a senha</button>
+                </fieldset>
+                <fieldset class="fieldset">
+                    <legend>Criar nova conta</legend>
+                    <div class="form-group">
+                        <label for="">Nome completo</label>
+                        <input class="form-control" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="">E-mail</label>
+                        <input class="form-control" type="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Senha</label>
+                        <input class="form-control" type="password">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Confirmar senha</label>
+                        <input class="form-control" type="password">
+                    </div>
+                    <button class="btn btn-success pull-right" type="button">Cadastrar</button>
+                </fieldset>
+            </form>
+        </main>
+    </section>
+    <script data-main="javascripts/app" src="node_modules/requirejs/require.js"></script>
+</body>
+
+</html>

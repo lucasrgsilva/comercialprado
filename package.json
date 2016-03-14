@@ -1,0 +1,23 @@
+{
+  "name": "comercialprado",
+  "version": "0.0.1",
+  "description": "Comercial Prado Materiais para Construção",
+  "main": "main.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "comercial",
+    "prado"
+  ],
+  "author": "Rafael Antonio Lucio <rafaelantoniolucio@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "jquery": "^2.2.1",
+    "lodash": "^4.6.1",
+    "moment": "^2.12.0",
+    "q": "^1.4.1",
+    "requirejs": "^2.1.22"
+  }
+}

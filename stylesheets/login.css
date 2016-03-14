@@ -1,0 +1,19 @@
+.login {
+	width: 35%;
+	min-width: 350px;
+	transform: translate3d(0,30%,0);
+}
+
+.login .fieldset {
+	display: none;
+}
+
+.login .fieldset.active {
+	display: block;
+}
+
+@media (max-width: 768px) {
+	.login{
+		width: 95%;
+	}
+}
